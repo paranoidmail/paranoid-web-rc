@@ -81,7 +81,7 @@ $config['des_key'] = '5321c326b28863b9bb14b00b';
 $config['username_domain'] = 'paranoid.email';
 
 // Name your service. This is displayed on the login screen and in the window title
-$config['product_name'] = '@PARANOID';
+$config['product_name'] = 'Paranoid.EMAIL Roundcube';;
 
 // ----------------------------------
 // PLUGINS

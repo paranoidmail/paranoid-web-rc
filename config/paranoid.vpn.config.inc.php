@@ -2,6 +2,11 @@
 
 /* Local configuration for Roundcube Webmail */
 
+// ParanoidMail Team http://paranoid.email
+// Configuration file for Paranoid VPN connection to IMAP and SMTP paranoid.email services
+// The VPN Paranoid services allow users access email servers (IMAP,SMTP) using OpenVPN connection.
+// If you would like to use this service please use http://paranoid.email  or contact support@paranoid.email
+
 // ----------------------------------
 // SQL DATABASE
 // ----------------------------------
@@ -10,7 +15,7 @@
 // Currently supported db_providers: mysql, pgsql, sqlite, mssql or sqlsrv
 // For examples see http://pear.php.net/manual/en/package.database.mdb2.intro-dsn.php
 // NOTE: for SQLite use absolute path: 'sqlite:////full/path/to/sqlite.db?mode=0646'
-$config['db_dsnw'] = 'mysql://root:Wdclag00%21@localhost/paranoid';
+$config['db_dsnw'] = 'mysql://root:paranoid@localhost/paranoid';
 
 // ----------------------------------
 // IMAP
@@ -81,7 +86,7 @@ $config['des_key'] = '5321c326b28863b9bb14b00b';
 $config['username_domain'] = 'paranoid.email';
 
 // Name your service. This is displayed on the login screen and in the window title
-$config['product_name'] = '@PARANOID';
+$config['product_name'] = 'Paranoid.EMAIL Roundcube';
 
 // ----------------------------------
 // PLUGINS
