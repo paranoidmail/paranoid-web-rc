@@ -5,7 +5,7 @@
 // ParanoidMail Team http://paranoid.email
 // Configuration file for direct connection to IMAP and SMTP paranoid.email services
 
-
+$config['skin'] = 'paranoid';
 
 // ----------------------------------
 // SQL DATABASE

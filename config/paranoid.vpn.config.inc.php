@@ -7,6 +7,8 @@
 // The VPN Paranoid services allow users access email servers (IMAP,SMTP) using OpenVPN connection.
 // If you would like to use this service please use http://paranoid.email  or contact support@paranoid.email
 
+$config['skin'] = 'paranoid';
+
 // ----------------------------------
 // SQL DATABASE
 // ----------------------------------
