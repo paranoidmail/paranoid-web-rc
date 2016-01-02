@@ -79,15 +79,15 @@ class legacy_browser extends rcube_plugin
                 '<link rel="stylesheet" type="text/css" href="plugins/legacy_browser/skins/classic/iehacks' . $minified . '.css" />'
             );
         }
-        else if ($skin == 'larry') {
-            $minified = file_exists(INSTALL_PATH . '/plugins/legacy_browser/skins/larry/iehacks.min.css') ? '.min' : '';
+        else if ($skin == 'paranoid') {
+            $minified = file_exists(INSTALL_PATH . '/plugins/legacy_browser/skins/paranoid/iehacks.min.css') ? '.min' : '';
             $this->rc->output->add_header(
-                '<link rel="stylesheet" type="text/css" href="plugins/legacy_browser/skins/larry/iehacks' . $minified . '.css" />'
+                '<link rel="stylesheet" type="text/css" href="plugins/legacy_browser/skins/paranoid/iehacks' . $minified . '.css" />'
             );
 
             if ($this->rc->output->browser->ver < 8) {
                 $this->rc->output->add_header(
-                    '<link rel="stylesheet" type="text/css" href="plugins/legacy_browser/skins/larry/ie7hacks' . $minified . '.css" />'
+                    '<link rel="stylesheet" type="text/css" href="plugins/legacy_browser/skins/paranoid/ie7hacks' . $minified . '.css" />'
                 );
             }
         }
@@ -98,7 +98,7 @@ class legacy_browser extends rcube_plugin
         $skin  = $this->rc->config->get('skin');
 
         // external skin, find if it inherits from other skin
-        if ($skin != 'larry' && $skin != 'classic') {
+        if ($skin != 'paranoid' && $skin != 'classic') {
             $json = @file_get_contents(INSTALL_PATH . "/skins/$skin/meta.json");
             $json = @json_decode($json, true);
 

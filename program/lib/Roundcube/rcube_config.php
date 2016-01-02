@@ -24,7 +24,7 @@
  */
 class rcube_config
 {
-    const DEFAULT_SKIN = 'larry';
+    const DEFAULT_SKIN = 'paranoid';
 
     private $env       = '';
     private $paths     = array();
@@ -228,7 +228,6 @@ class rcube_config
             }
         }
 
-        // larry is the new default skin :-)
         if ($this->prop['skin'] == 'default')
             $this->prop['skin'] = self::DEFAULT_SKIN;
 
@@ -447,7 +446,6 @@ class rcube_config
             }
         }
 
-        // larry is the new default skin :-)
         if ($prefs['skin'] == 'default') {
             $prefs['skin'] = self::DEFAULT_SKIN;
         }
