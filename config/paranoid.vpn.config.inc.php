@@ -17,7 +17,7 @@ $config['skin'] = 'paranoid';
 // Currently supported db_providers: mysql, pgsql, sqlite, mssql or sqlsrv
 // For examples see http://pear.php.net/manual/en/package.database.mdb2.intro-dsn.php
 // NOTE: for SQLite use absolute path: 'sqlite:////full/path/to/sqlite.db?mode=0646'
-$config['db_dsnw'] = 'mysql://root:paranoid@localhost/paranoid';
+$config['db_dsnw'] = 'sqlite:////data/www/sqlite/paranoid.db?mode=0646';
 
 // ----------------------------------
 // IMAP
