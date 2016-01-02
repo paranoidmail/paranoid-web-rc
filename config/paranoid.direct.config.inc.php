@@ -2,6 +2,11 @@
 
 /* Local configuration for Roundcube Webmail */
 
+// ParanoidMail Team http://paranoid.email
+// Configuration file for direct connection to IMAP and SMTP paranoid.email services
+
+
+
 // ----------------------------------
 // SQL DATABASE
 // ----------------------------------
