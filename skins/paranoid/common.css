@@ -18,7 +18,7 @@ body
   margin: 8px;
   background-color: #D65912;
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body.iframe
@@ -219,7 +219,7 @@ body > #logo
 
 #taskbar a
 {
-  font-size: 16px;
+  font-size: 18px;
   color: #FFF;
   text-decoration: none;
   padding: 6px 12px 6px 26px;
