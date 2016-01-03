@@ -1,6 +1,7 @@
 @PARANOID Project with Roundcube Webmail 
 =================
 [paranoid.EMAIL](http://paranoid.email)
+[roundcube.net](http://roundcube.net)
 
 INTRODUCTION
 ------------
@@ -14,16 +15,18 @@ There is no reason to re-invent the bicycle regarding encryption standards, Open
 
 What is the @PARANOID Pi?
 ------------
-@PARANOID Pi is a preinstalled images to access @PARANOID services
+@PARANOID Pi is a pre-configured Raspberry PI images to read and write OpenPGP enabled emails from the local network. Every RPi image consist of @PARANOID scripts, Roundcube webmail 1.2 and Roundcube Enigma OpenPGP plugin. 
 
 INSTALLATION
 ------------
-For detailed instructions on how to install Roundcube webmail on your server,
-please refer to the INSTALL document in the same directory as this document.
+There are two option for the moment:
+1. Download precompiled RPi1 or RPi2 image and burn it on SD/MicroSD card.
+2. To use the step by step script to deploy the @PARANOID Pi Bundle on existing RPi Raspbian. 
 
-If you're updating an older version of Roundcube please follow the steps
-described in the UPGRADING file.
-
+DOWNLOAD 
+------------
+SD/MicroSD @PARANOID Pi images are here: [paranoid.EMAIL](http://paranoid.email/paranoidpi)
+Minial SD/Micro SD card size is 2GB, if card is bigger then 2GB boot script will automatically extend it to maximum size of the SD/ Micro SD card.
 
 LICENSE
 -------
@@ -40,37 +43,11 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see [www.gnu.org/licenses/][gpl].
 
-This file forms part of the Roundcube Webmail Software for which the
-following exception is added: Plugins and Skins which merely make
-function calls to the Roundcube Webmail Software, and for that purpose
-include it by reference shall not be considered modifications of
-the software.
-
-If you wish to use this file in another project or create a modified
-version that will not be part of the Roundcube Webmail Software, you
-may remove the exception above and use this source code under the
-original version of the license.
-
-For more details about licensing and the exceptions for skins and plugins
-see [roundcube.net/license][license]
-
-
-CONTRIBUTION
-------------
-Want to help make Roundcube the best webmail solution ever?
-Roundcube is open source software. Our developers and contributors all
-are volunteers and we're always looking for new additions and resources.
-For more information visit [roundcube.net/contribute][contrib]
-
-
 CONTACT
 -------
-For any bug reports or feature requests please refer to the tracking system
-at [trac.roundcube.net][tracreport] or subscribe to our mailing list.
-See [roundcube.net/support][support] for details.
 
 You're always welcome to send a message to the project admin:
-hello(at)roundcube(dot)net
+support(at)paranoid(dot)email
 
 
 [pear]:         http://pear.php.net
