@@ -1,35 +1,20 @@
-Roundcube Webmail 
+@PARANOID Project with Roundcube Webmail 
 =================
-[roundcube.net](http://roundcube.net)
-
-
-ATTENTION
----------
-This is just a snapshot from the GIT repository and is **NOT A STABLE
-version of Roundcube**. It's not recommended to replace an existing installation
-of Roundcube with this version. Also using a separate database for this
-installation is highly recommended.
-
+[paranoid.EMAIL](http://paranoid.email)
 
 INTRODUCTION
 ------------
-Roundcube Webmail is a browser-based multilingual IMAP client with an
-application-like user interface. It provides full functionality you expect
-from an email client, including MIME support, address book, folder management,
-message searching and spell checking. Roundcube Webmail is written in PHP and
-requires the MySQL, PostgreSQL or SQLite database. With its plugin API it is
-easily extendable and the user interface is fully customizable using skins
-which are pure XHTML and CSS 2.
+Return the privacy to day-to-day email communication and make it as popular as possible. Make it de-facto standard. Private conversations are not for everybody and encryption makes the body of your private email unreadable on its transit for any third party. Even if the message created for you is not encrypted (for any reason), we'll make this job for you, so your whole Inbox will be readable by you and by you only (unless your private key(s) are compromised).
 
-The code is mainly written in PHP and is designed to run on a webserver.
-It includes other open-source classes/libraries from [PEAR][pear],
-an IMAP library derived from [IlohaMail][iloha] the [TinyMCE][tinymce] rich
-text editor, [Googiespell][googiespell] library for spell checking or
-the [WASHTML][washtml] sanitizer by Frederic Motte.
+What is @PARANOID ?
+------------
+ParanoidMail is the OpenPGP-compliant encrypted email service, aimed to make the whole process of encrypted communication much easier than it exists today at the same time minimizing the inevitable security trade-offs.
 
-The current default skin 'Larry' was kindly created by FLINT / Büro für
-Gestaltung, Berne, Switzerland.
+There is no reason to re-invent the bicycle regarding encryption standards, OpenPGP (Pretty Good Privacy) makes its job really well and with proper key size its (still) unbreakable. Unfortunately, PGP key management solutions from their very beginning till today are still tools developed 'by geeks and for geeks'. Our mission is to revamp it as 'by geeks, but for people'.
 
+What is the @PARANOID Pi?
+------------
+@PARANOID Pi is a preinstalled images to access @PARANOID services
 
 INSTALLATION
 ------------
