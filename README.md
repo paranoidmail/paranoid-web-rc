@@ -1,7 +1,10 @@
 @PARANOID Project with Roundcube Webmail 
 =================
-[paranoid.EMAIL](http://paranoid.email)
-[roundcube.net](http://roundcube.net)
+[paranoid.EMAIL](http://paranoid.email) OpenPGP-compliant encrypted email service, aimed to make the whole process of encrypted communication much easier than it exists today
+
+[roundcube.net](http://roundcube.net) browser-based multilingual IMAP client with an application-like user interface
+
+[paranoidpi.com](http://paranoidpi.com) OpenPGP-compliant raspbian project desigend to use inside NAT network at home / office / local network. 
 
 INTRODUCTION
 ------------
@@ -15,18 +18,18 @@ There is no reason to re-invent the bicycle regarding encryption standards, Open
 
 What is the @PARANOID Pi?
 ------------
-@PARANOID Pi is a pre-configured Raspberry PI images to read and write OpenPGP enabled emails from the local network. Every RPi image consist of @PARANOID scripts, Roundcube webmail 1.2 and Roundcube Enigma OpenPGP plugin. 
+PARANOID Pi is a pre-configured Raspberry PI image which designed to read and write OpenPGP encrypted emails from the local / home / office network. RPi image consist of @PARANOID scripts, Roundcube webmail 1.2 and Enigma OpenPGP plugin. Current version of the bundle allows to use your private key to decrypt emails and encrypt emails with public keys within @PARANOID mailbox.
 
 INSTALLATION
 ------------
 There are two option for the moment:
-1. Download precompiled RPi1 or RPi2 image and burn it on SD/MicroSD card.
+1. Download pre build RPi image and burn it on SD/MicroSD card.
 2. To use the step by step script to deploy the @PARANOID Pi Bundle on existing RPi Raspbian. 
 
 DOWNLOAD 
 ------------
-SD/MicroSD @PARANOID Pi images are here: [paranoid.EMAIL](http://paranoid.email/paranoidpi)
-Minial SD/Micro SD card size is 2GB, if card is bigger then 2GB boot script will automatically extend it to maximum size of the SD/ Micro SD card.
+SD/MicroSD @PARANOID Pi image cae be downloaed here: [paranoid.EMAIL](http://paranoid.email/paranoidpi)
+Minial SD/Micro SD card size is 2GB, if card is bigger then 2GB boot script will automatically extend it to maximum size of the card. The image is compatible with Raspberry Pi 2 Model B and Raspberry Pi 1 Model B+
 
 LICENSE
 -------
