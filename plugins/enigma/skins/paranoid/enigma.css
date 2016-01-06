@@ -1,5 +1,11 @@
 /*** Style for Enigma plugin ***/
 
+.ui-widget {
+  font-family: 'Titillium Light';
+  font-size: 11px;
+}
+
+
 /***** Messages displaying *****/
 
 #enigma-message,
