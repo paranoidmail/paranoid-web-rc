@@ -16,6 +16,7 @@
 */
 
 require_once 'Crypt/GPG.php';
+require_once 'Crypt/GPG/KeyGenerator.php';
 
 class enigma_driver_gnupg extends enigma_driver
 {
