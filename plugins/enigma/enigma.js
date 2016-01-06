@@ -48,6 +48,11 @@ window.rcmail && rcmail.addEventListener('init', function(evt) {
             });
         }
 
+        $.each(['encrypt', 'sign'], function() {
+            if (rcmail.env['enigma_force_' + this])
+                $('[name="_enigma_' + this + '"]').prop('checked', true);
+        });
+
         if (rcmail.env.enigma_password_request) {
             rcmail.enigma_password_request(rcmail.env.enigma_password_request);
         }
@@ -92,7 +97,13 @@ rcube_webmail.prototype.enigma_key_create_save = function()
 
     // generate keys
     // use OpenPGP.js if browser supports required features
-    if (false) {
+    if (rcmail.env.enigma_keygen_server) {
+        lock = this.set_busy(true, 'enigma.keygenerating');
+        options = {_a: 'generate', _user: user, _password: password, _size: size};
+        rcmail.http_post('plugin.enigmakeys', options, lock);
+    }
+    // generate keys on the server
+    else if (window.openpgp && window.crypto && (window.crypto.getRandomValues || window.crypto.subtle)) {
         lock = this.set_busy(true, 'enigma.keygenerating');
         options = {
             numBits: size,
@@ -111,12 +122,6 @@ rcube_webmail.prototype.enigma_key_create_save = function()
             rcmail.set_busy(false, null, lock);
             rcmail.display_message(rcmail.get_label('enigma.keygenerateerror'), 'error');
         });
-    }
-    // generate keys on the server
-    else if (true) {
-        lock = this.set_busy(true, 'enigma.keygenerating');
-        options = {_a: 'generate', _user: user, _password: password, _size: size};
-        rcmail.http_post('plugin.enigmakeys', options, lock);
     }
     else {
         rcmail.display_message(rcmail.get_label('enigma.keygennosupport'), 'error');
