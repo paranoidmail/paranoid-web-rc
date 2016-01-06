@@ -96,3 +96,7 @@ $config['product_name'] = 'Paranoid.EMAIL Roundcube';
 // List of active plugins (in plugins/ directory)
 $config['plugins'] = array('debug_logger', 'emoticons', 'enigma', 'jqueryui', 'legacy_browser', 'newmail_notifier', 'vcard_attachments');
 
+// ----------------------------------
+// ENIGMA PLUGIN Configuration
+// ----------------------------------
+$config['enigma_keygen_server'] = true;
