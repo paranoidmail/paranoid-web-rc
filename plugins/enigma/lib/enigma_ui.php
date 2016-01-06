@@ -591,8 +591,9 @@ class enigma_ui
         }
 
         $this->enigma->load_engine();
-        $result = $this->enigma->engine->generate_key(array(
-            'user'     => $ident[1]['name'],
+        list($extracted_name,$_) = explode('@',$ident[1]['mailto']); $domain = '@'.$_;
+	$result = $this->enigma->engine->generate_key(array(
+            'user'     => ( $ident[1]['name'] ? $ident[1]['name'] : $extracted_name ),
             'email'    => $ident[1]['mailto'],
             'password' => $pass,
             'size'     => $size,
