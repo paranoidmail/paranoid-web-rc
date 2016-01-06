@@ -92,17 +92,18 @@ rcube_webmail.prototype.enigma_key_create_save = function()
     if (password != confirm)
         return alert(this.get_label('enigma.passwordsdiffer'));
 
-    if (user.match(/^<[^>]+>$/))
-        return alert(this.get_label('enigma.nonameident'));
+	// Removed ident check due to issues with key generation 
+    // if (user.match(/^<[^>]+>$/))
+    //   return alert(this.get_label('enigma.nonameident'));
 
     // generate keys
-    // use OpenPGP.js if browser supports required features
+    // generate keys on the server
     if (rcmail.env.enigma_keygen_server) {
         lock = this.set_busy(true, 'enigma.keygenerating');
         options = {_a: 'generate', _user: user, _password: password, _size: size};
         rcmail.http_post('plugin.enigmakeys', options, lock);
     }
-    // generate keys on the server
+    // use OpenPGP.js if browser supports required features
     else if (window.openpgp && window.crypto && (window.crypto.getRandomValues || window.crypto.subtle)) {
         lock = this.set_busy(true, 'enigma.keygenerating');
         options = {
