@@ -73,7 +73,7 @@ $labels['newkeypassconfirm'] = 'Confirm password:';
 $labels['newkeysize'] = 'Key size:';
 $labels['key2048'] = '2048 bits - default';
 $labels['key4096'] = '4096 bits - more secure';
-$labels['keygenerating'] = 'Generating keys...';
+$labels['keygenerating'] = 'Generating keys! It takes up to 180 seconds. Please wait.';
 
 $labels['encryptionoptions'] = 'Encryption options...';
 $labels['encryptmsg'] = 'Encrypt this message';
