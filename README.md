@@ -4,7 +4,7 @@
 
 [roundcube.net](http://roundcube.net) browser-based multilingual IMAP client with an application-like user interface
 
-[paranoidpi.com](http://paranoidpi.com) OpenPGP-compliant raspbian project desigend to use inside NAT network at home / office / local network. 
+[paranoidpi.com](http://paranoidpi.com) OpenPGP-compliant raspbian project designed to use inside NAT network at home / office / local network. 
 
 INTRODUCTION
 ------------
@@ -12,7 +12,7 @@ Return the privacy to day-to-day email communication and make it as popular as p
 
 What is @PARANOID ?
 ------------
-ParanoidMail is the OpenPGP-compliant encrypted email service, aimed to make the whole process of encrypted communication much easier than it exists today at the same time minimizing the inevitable security trade-offs.
+ParanoidMail is the OpenPGP-compliant encrypted email service, aimed to make the whole process of encrypted communication much easier than it exists today at the same time minimising the inevitable security trade-offs.
 
 There is no reason to re-invent the bicycle regarding encryption standards, OpenPGP (Pretty Good Privacy) makes its job really well and with proper key size its (still) unbreakable. Unfortunately, PGP key management solutions from their very beginning till today are still tools developed 'by geeks and for geeks'. Our mission is to revamp it as 'by geeks, but for people'.
 
@@ -28,8 +28,8 @@ There are two option for the moment:
 
 DOWNLOAD 
 ------------
-SD/MicroSD @PARANOID Pi image cae be downloaed here: [paranoid.EMAIL](http://paranoid.email/paranoidpi)
-Minial SD/Micro SD card size is 2GB, if card is bigger then 2GB boot script will automatically extend it to maximum size of the card. The image is compatible with Raspberry Pi 2 Model B and Raspberry Pi 1 Model B+
+SD/MicroSD @PARANOID Pi image can be downloaded here: [paranoid.EMAIL](http://paranoid.email/paranoidpi)
+Minimal SD/Micro SD card size is 2GB, if card is bigger then 2GB boot script will automatically extend it to maximum size of the card. The image is compatible with Raspberry Pi 2 Model B and Raspberry Pi 1 Model B+
 
 LICENSE
 -------
@@ -64,3 +64,4 @@ support(at)paranoid(dot)email
 [contrib]:      http://roundcube.net/contribute
 [support]:      http://roundcube.net/support
 [tracreport]:   http://trac.roundcube.net/wiki/Howto_ReportIssues
+
